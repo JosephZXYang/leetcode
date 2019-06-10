@@ -1,10 +1,15 @@
+/**
+
+Key points: 
+
+1. Iterates the array only once.
+2. Use a HashSet to store visited numbers.
+
+*/
+
 import java.util.*;
 
 class Solution {
-	
-	/**Given an array of integers, return indices of the two 
-	 * numbers such that they add up to a specific target.
-	 */
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
         int[] result = new int[2];

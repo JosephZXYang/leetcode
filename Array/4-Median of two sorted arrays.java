@@ -1,3 +1,25 @@
+/**
+
+Key points:
+
+1. The idea is: Split both arrays into 2 subarrays. 
+Suppose nums1 = nums1_left + nums1_right,
+        nums2 = nums2_left + nums2_right,
+make sure that (nums1_left + nums2_left) contains half
+numbers, and no number in this set can be larger than the smallest
+number in the remaining set. This condition can be represented as:
+    a) i + j = (m + n) / 2       // (m + n) even case
+             = (m + n) / 2 - 1   // (m + n) odd case
+    b) nums1[i] <= nums2[j + 1]
+    c) nums2[j] <= nums1[i + 1]
+
+2. Use binary search when we trying to find the corrent i/j split.
+In this case, we could accomplish O(log n) time complexity.
+
+*/
+
+import java.util.*;
+
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int m = nums1.length;
