@@ -8,6 +8,8 @@ Key points:
 	2. This implementation does not need extra memory for 
 	array/table/set storage
 
+Difficulty: Medium
+
 */
 
 class Solution {

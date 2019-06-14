@@ -2,8 +2,11 @@
 
 Key points: 
 
-1. Iterates the array only once.
-2. Use a HashSet to store visited numbers.
+    1. Iterates the array only once.
+
+    2. Use a HashSet to store visited numbers.
+
+Difficulty: Easy
 
 */
 

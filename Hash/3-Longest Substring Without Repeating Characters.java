@@ -2,10 +2,13 @@
 
 Key points:
 
-1. No need to update entire HashMap in each iteration.
-In order to get the correct start index, use Math.max().
-2. Note that all elements in the map records the last 
-occurrence index of corresponding key value.
+	1. No need to update entire HashMap in each iteration.
+	In order to get the correct start index, use Math.max().
+
+	2. Note that all elements in the map records the last 
+	occurrence index of corresponding key value.
+
+Difficulty: Medium
 
 */
 
